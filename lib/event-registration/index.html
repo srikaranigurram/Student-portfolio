@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Event Registration</h2>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text"
+                   placeholder="Enter your full name"
+                   required>
+
+            <label>Email</label>
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <label>Phone Number</label>
+            <input type="tel"
+                   placeholder="Enter phone number"
+                   required>
+
+            <label>Select Event</label>
+            <select required>
+                <option value="">-- Select Event --</option>
+                <option>Web Development Workshop</option>
+                <option>Cloud Computing Workshop</option>
+                <option>Hackathon</option>
+                <option>Technical Seminar</option>
+            </select>
+
+            <label>College/Organization</label>
+            <input type="text"
+                   placeholder="Enter college or organization">
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
